@@ -1,6 +1,6 @@
-import { IFetchProfile } from "../../types"
+import { IFetchAccount } from "../../types"
 
-export const fetchProfile : IFetchProfile = async (username)  => {
+export const fetchAccount : IFetchAccount = async (username)  => {
    const resp = await fetch(`https://leetcode.com/${username}`)
    if(resp.status!=200){
     return ({

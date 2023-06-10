@@ -1,11 +1,11 @@
-import {fetchProfile, parse} from "../src"
+import {fetchAccount, getLCAccount, parseAccount} from "../src"
 describe('Fetching and Parsing', () => {
   let html:string;
   let status: number;
   let profile = "husain3012"
 
   beforeAll(async()=>{
-    const resp = await fetchProfile(profile)
+    const resp = await fetchAccount(profile)
      html = resp.data || ""
      status = resp.status
   })
@@ -25,10 +25,34 @@ describe('Fetching and Parsing', () => {
 
   it('parses fetched profile', async () => {
 
-    const userData = parse(html)
+    const userData = parseAccount(html)
     expect(userData.username).toEqual(profile);
     
   });
 
 
 });
+
+describe('End to End', () => {
+
+  let profile = "husain3012"
+
+  it(`get the account for the use ${profile}`,async () => {
+
+    const user = await getLCAccount(profile)
+
+    
+    
+
+
+    expect(user.status).toEqual(200)
+    expect(user.data).not.toBeNull();
+    expect(user.data?.username).toEqual(profile)
+
+    
+  });
+
+ 
+
+});
+

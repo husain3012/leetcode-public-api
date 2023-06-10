@@ -1,7 +1,7 @@
-export * from "./fetchProfile"
+export * from "./fetchAccount"
 export * from "./parse"
 import { ILeetCodeUser } from "..";
 
-export type IGetAccount = (username: string) => Promise<{
+export type IGetLCAccount = (username: string) => Promise<{
     status:number, statusText:string, data:ILeetCodeUser|null
 }>;;

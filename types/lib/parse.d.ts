@@ -1,3 +1,3 @@
 import { ILeetCodeUser } from "..";
 
-export type IParse = (html: string) => ILeetCodeUser;
+export type IParseAccount = (html: string) => ILeetCodeUser;

@@ -1,4 +1,4 @@
-import {ILeetCodeUser, IParse} from "../../types"
+import {ILeetCodeUser, IParseAccount} from "../../types"
 
 const start = '<script id="__NEXT_DATA__" type="application/json">';
 const end = "</script>";
@@ -11,7 +11,7 @@ const contestAttendedStart = 'Attended</div><div class="text-label-1 dark:text-d
 const contestAttendedEnd = '</div></div></div></div>'
 
 
-export const parse : IParse = (html) => {
+export const parseAccount : IParseAccount = (html) => {
 
     let useFullData = [];
     

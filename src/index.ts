@@ -1,16 +1,16 @@
-import { IGetAccount } from "../types";
+import { IGetLCAccount } from "../types";
 
-import { fetchProfile } from "./lib/fetchProfile";
-import { parse } from "./lib/parse";
+import { fetchAccount } from "./lib/fetchAccount";
+import { parseAccount } from "./lib/parseAccount";
 
-export const getAccount  : IGetAccount = async (username) => {
+export const getLCAccount  : IGetLCAccount = async (username) => {
   
-    const html = await fetchProfile(username);
+    const html = await fetchAccount(username);
     if(html.data!=null){
       return ({
         status: html.status,
         statusText: html.statusText,
-        data: parse(html.data)
+        data: parseAccount(html.data)
       })
     } 
 
@@ -23,7 +23,7 @@ export const getAccount  : IGetAccount = async (username) => {
   
 }
 
-export { fetchProfile } from "./lib/fetchProfile";
-export { parse } from "./lib/parse";
+export { fetchAccount } from "./lib/fetchAccount";
+export { parseAccount } from "./lib/parseAccount";
 
 
