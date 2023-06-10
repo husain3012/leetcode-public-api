@@ -28,7 +28,6 @@ describe('End to End', () => {
 
   it(`get the account for the use ${profile}`, async () => {
     const user = await getLCAccount(profile);
-
     expect(user.status).toEqual(200);
     expect(user.data).not.toBeNull();
     expect(user.data?.username).toEqual(profile);
