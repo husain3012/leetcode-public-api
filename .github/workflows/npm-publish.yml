@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          
+
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
 
@@ -32,6 +32,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+      - name: Install deps and build (with cache)
+        uses: bahmutov/npm-install@v1
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
