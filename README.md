@@ -1,7 +1,5 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img   src="docs/images/LeetCode.jpg" alt="Project logo"></a>
-</p>
+
+![LeetCode Public API](https://github.com/husain3012/leetcode-public-api/assets/49821470/3b30b00f-e39f-4dea-9aea-0e71557ff669)
 
 <h3 align="center">LeetCode Public API</h3>
 
