@@ -1,7 +1,11 @@
+<h3 align="center">LeetCode Public API</h3>
+
+<p align="center"> An unofficial public API for LeetCode with full type support!
+    <br> 
+</p>
 
 ![LeetCode Public API](https://github.com/husain3012/leetcode-public-api/assets/49821470/3b30b00f-e39f-4dea-9aea-0e71557ff669)
 
-<h3 align="center">LeetCode Public API</h3>
 
 <div align="center">
 
@@ -14,10 +18,6 @@
 </div>
 
 ---
-
-<p align="center"> An unofficial public API for LeetCode with full type support!
-    <br> 
-</p>
 
 ## 📝 Table of Contents
 
