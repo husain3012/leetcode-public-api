@@ -1,10 +1,10 @@
 {
-  "name": "leetcode-api",
+  "name": "leetcode-public-api",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Husain Shahid Rao",
   "main": "dist/index.js",
-  "module": "dist/leetcode-api.esm.js",
+  "module": "dist/leetcode-public-api.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
@@ -39,11 +39,11 @@
   },
   "size-limit": [
     {
-      "path": "dist/leetcode-api.cjs.production.min.js",
+      "path": "dist/leetcode-public-api.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/leetcode-api.esm.js",
+      "path": "dist/leetcode-public-api.esm.js",
       "limit": "10 KB"
     }
   ],

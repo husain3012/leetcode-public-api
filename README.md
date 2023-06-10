@@ -3,7 +3,7 @@
  <img   src="./docs/images/LeetCode.jpeg" alt="Project logo"></a>
 </p>
 
-<h3 align="center">LeetCode API</h3>
+<h3 align="center">LeetCode Public API</h3>
 
 <div align="center">
 
@@ -41,13 +41,13 @@ I small package written in typescript to fetch public stats of a LeetCode profil
 - Using yarn
 
   ```bash
-  yarn add @husain3012/leetcode-api
+  yarn add @husain3012/leetcode-public-api
   ```
 
 - Using npm
   
   ```bash
-  npm i @husain3012/leetcode-api
+  npm i @husain3012/leetcode-public-api
   ```
 
 ### Usage <a name="usage"></a>
@@ -56,7 +56,7 @@ I small package written in typescript to fetch public stats of a LeetCode profil
 1. Import
 
     ```javascript
-    import {getLCAccount} from "@husain3012/leetcode-api"
+    import {getLCAccount} from "@husain3012/leetcode-public-api"
     ```
 
 2. Use
