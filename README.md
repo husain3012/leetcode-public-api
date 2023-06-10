@@ -41,13 +41,13 @@ I small package written in typescript to fetch public stats of a LeetCode profil
 - Using yarn
 
   ```bash
-  yarn add @husain3012/leetcode-public-api
+  yarn add leetcode-public-api
   ```
 
 - Using npm
   
   ```bash
-  npm i @husain3012/leetcode-public-api
+  npm i leetcode-public-api
   ```
 
 ### Usage <a name="usage"></a>
@@ -56,7 +56,7 @@ I small package written in typescript to fetch public stats of a LeetCode profil
 1. Import
 
     ```javascript
-    import {getLCAccount} from "@husain3012/leetcode-public-api"
+    import {getLCAccount} from "leetcode-public-api"
     ```
 
 2. Use
@@ -72,5 +72,5 @@ fetchAccount = (username:string) => Promise<status:number, statusText:string, da
 ```
 
 ```typescript
-parse = (profile_html:string) => ILeetCodeUser
+parseAccount = (profile_html:string) => ILeetCodeUser
 ```
