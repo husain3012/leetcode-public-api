@@ -1,4 +1,4 @@
-import { IFetchAccount } from '../types';
+import { IFetchAccount } from '../../@types';
 
 /**
  * Fetches the HTML for a LeetCode profile using username

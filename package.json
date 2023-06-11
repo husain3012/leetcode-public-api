@@ -1,6 +1,6 @@
 {
   "name": "leetcode-public-api",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "license": "MIT",
   "author": "Husain Shahid Rao",
   "main": "dist/index.js",
@@ -8,7 +8,8 @@
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
-    "src"
+    "src",
+    "@types"
   ],
   "repository": "https://github.com/husain3012/leetcode-public-api",
   "scripts": {
