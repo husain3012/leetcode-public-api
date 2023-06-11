@@ -6,7 +6,16 @@ export interface ILeetCodeUser {
     contestAttended: number;
     contestRating: number;
     contestRanking: number;
-    contestBadge: string | null;
+    contestBadge: null | {
+      name: string;
+      expired: boolean;
+      hoverText: string;
+      icon: string;
+    };
+    activeBadge: null | {
+      displayName:string;
+      icon:string;
+    };
     profile: {
       ranking: number;
       userAvatar: string;
@@ -49,7 +58,7 @@ export interface ILeetCodeUser {
       activeYears: number[];
       streak: number;
       totalActiveDays: number;
-      submissionCalendar? : Object
+      submissionCalendar? : string
     };
     submitStatsGlobal: {
       acSubmissionNum: {
@@ -64,6 +73,17 @@ export interface ILeetCodeUser {
       displayName: string;
       icon: string;
       hoverText: string;
+      creationDate:string;
+      category:string
     }[];
+    upcomingBadges:{
+      name:string;
+      icon:string;
+      progress:number;
+    }[];
+    problemsSolvedBeatsStats:{
+      difficulty:string;
+      percentage: number;
+    }[]
   
   }

@@ -3,6 +3,11 @@ import { IGetLCAccount } from '../types';
 import { fetchAccount } from './lib/fetchAccount';
 import { parseAccount } from './lib/parseAccount';
 
+/**
+ * Fetches and parses a LeetCode profile using username.
+ * @async
+ * @param username - Username for the LeetCode profile.
+ */
 export const getLCAccount: IGetLCAccount = async (username) => {
   const html = await fetchAccount(username);
   if (html.data != null) {

@@ -15,6 +15,11 @@ const contestAttendedStart =
   'Attended</div><div class="text-label-1 dark:text-dark-label-1 font-medium leading-[22px]">';
 const contestAttendedEnd = '</div></div></div></div>';
 
+/**
+ * Parses data from HTML String of a LeetCode Profile.
+ * @param html - HTML string of a LeetCode profile page.
+ * @returns - Type safe data for the LeetCode Account
+ */
 export const parseAccount: IParseAccount = (html) => {
   let useFullData = [];
 
@@ -55,7 +60,13 @@ export const parseAccount: IParseAccount = (html) => {
   return typecastResponse(useFullData);
 };
 
-export const typecastResponse = (user: any[]) => {
+/**
+ * Helper for parseAccount function, to make the data type-safe.
+ * @private
+ * @param user - Raw JSON response from parsing of the HTML.
+ * @returns - Type safe data for the LeetCode Account
+ */
+const typecastResponse = (user: any[]) => {
   const transformed_user = user.reduce((acc, u: any) => {
     for (let key of Object.keys(u)) {
       acc[key] = u[key];
