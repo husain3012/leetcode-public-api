@@ -7,8 +7,7 @@
   "module": "dist/leetcode-public-api.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "repository": "https://github.com/husain3012/leetcode-public-api",
   "scripts": {
