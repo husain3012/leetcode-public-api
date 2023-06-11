@@ -1,4 +1,4 @@
-import { IGetLCAccount } from '../types';
+import { IGetLCAccount } from './types';
 
 import { fetchAccount } from './lib/fetchAccount';
 import { parseAccount } from './lib/parseAccount';

@@ -1,4 +1,4 @@
-import { ILeetCodeUser, IParseAccount } from '../../types';
+import { ILeetCodeUser, IParseAccount } from '../types';
 
 const start = '<script id="__NEXT_DATA__" type="application/json">';
 const end = '</script>';
