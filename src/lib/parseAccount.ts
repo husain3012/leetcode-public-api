@@ -1,4 +1,4 @@
-import { ILeetCodeUser, IParseAccount } from '../../@types';
+import { ILeetCodeUser, IParseAccount } from '../../types';
 
 const start = '<script id="__NEXT_DATA__" type="application/json">';
 const end = '</script>';
@@ -17,8 +17,6 @@ const contestAttendedEnd = '</div></div></div></div>';
 
 /**
  * Parses data from HTML String of a LeetCode Profile.
- * @param html - HTML string of a LeetCode profile page.
- * @returns - Type safe data for the LeetCode Account
  */
 export const parseAccount: IParseAccount = (html) => {
   let useFullData = [];
@@ -62,9 +60,6 @@ export const parseAccount: IParseAccount = (html) => {
 
 /**
  * Helper for parseAccount function, to make the data type-safe.
- * @private
- * @param user - Raw JSON response from parsing of the HTML.
- * @returns - Type safe data for the LeetCode Account
  */
 const typecastResponse = (user: any[]) => {
   const transformed_user = user.reduce((acc, u: any) => {
