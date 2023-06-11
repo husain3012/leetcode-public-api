@@ -1,7 +1,8 @@
 # LeetCode Public API
 
-An unofficial public API for LeetCode with full type support!
-  
+An unofficial public API for LeetCode with full type support and zero dependencies!
+**Requires NodeJS >= 17.5**
+
 
 ![LeetCode Public API](https://github.com/husain3012/leetcode-public-api/assets/49821470/3b30b00f-e39f-4dea-9aea-0e71557ff669)
 
@@ -27,15 +28,16 @@ An unofficial public API for LeetCode with full type support!
     - [Installing](#installing)
     - [Usage ](#usage-)
   - [Example Response](#example-response)
-  - [Function](#function)
+  - [Functions](#functions)
 
 ## 🧐 About <a name = "about"></a>
 
-I small package written in typescript to fetch public stats of a LeetCode profile. This API makes call to `leetcode.com` so abusing it might lead to rate limiting your IP.
+I small package written in typescript to fetch public stats of a LeetCode profile. This API makes call to `leetcode.com` using built in ```fetch```, so abusing it might lead to rate limiting your IP, and using it directly in browser may hit you with CORS.
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 ### Installing
 
+Compatible with JavaScript and Node JS 18 environments.
 
 - Using yarn
 

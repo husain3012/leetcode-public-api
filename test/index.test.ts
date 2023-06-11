@@ -1,5 +1,5 @@
 import { fetchAccount, getLCAccount, parseAccount } from '../src';
-import fs from "fs"
+
 describe('Fetching and Parsing', () => {
   let html: string;
   let status: number;
@@ -32,8 +32,5 @@ describe('End to End', () => {
     expect(user.status).toEqual(200);
     expect(user.data).not.toBeNull();
     expect(user.data?.username).toEqual(profile);
-    
-    fs.writeFileSync('response',JSON.stringify(user.data, null, 2))
-    
   });
 });
