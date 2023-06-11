@@ -8,8 +8,7 @@
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
-    "src",
-    "@types"
+    "src"
   ],
   "repository": "https://github.com/husain3012/leetcode-public-api",
   "scripts": {
