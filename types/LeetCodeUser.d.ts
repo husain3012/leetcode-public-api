@@ -74,7 +74,14 @@ export interface ILeetCodeUser {
       icon: string;
       hoverText: string;
       creationDate:string;
-      category:string
+      category:string;
+      medal: {
+        slug: string,
+        config: {
+          iconGif: string,
+          iconGifBackground: string
+        }
+      },
     }[];
     upcomingBadges:{
       name:string;

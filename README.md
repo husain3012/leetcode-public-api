@@ -1,7 +1,7 @@
 # LeetCode Public API
 
 An unofficial public API for LeetCode with full type support and zero dependencies!
-**Requires NodeJS >= 17.5**
+
 
 
 ![LeetCode Public API](https://github.com/husain3012/leetcode-public-api/assets/49821470/3b30b00f-e39f-4dea-9aea-0e71557ff669)
@@ -37,7 +37,7 @@ I small package written in typescript to fetch public stats of a LeetCode profil
 
 ### Installing
 
-Compatible with JavaScript and Node JS 18 environments.
+Compatible with JavaScript and  **NodeJS >= 17.5** environments.
 
 - Using yarn
 
@@ -52,7 +52,6 @@ Compatible with JavaScript and Node JS 18 environments.
   ```
 
 ### Usage <a name="usage"></a>
-
 
 1. Import
 
